@@ -1,0 +1,58 @@
+<idea-plugin version="2">
+  <id>easy.plugin.translation</id>
+  <name>Easy-Translation</name>
+  <version>1.0</version>
+  <vendor email="limengyu1990@163.com" url="https://github.com/limengyu1990">limengyu</vendor>
+
+  <description><![CDATA[
+      <h3>使用说明书</h3>
+      <p>File -> Settings -> Other Settings -> 翻译配置，设置翻译源</p>
+      <p>Google当前只能英文->中文<p>
+      <p>中文转英文: "鼠标右键->中文2英文",或者使用快捷键（Alt A）</p>
+      <p>英文转中文: 鼠标选中需要翻译的英文，然后"鼠标右键->翻译"，或者使用快捷键（Alt T）</p>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationConfigurable instance="easy.config.TranslationConfig"/>
+    <applicationService serviceInterface="easy.config.TranslationSetting"
+                        serviceImplementation="easy.config.TranslationSetting"/>
+  </extensions>
+
+  <application-components>
+    <component>
+      <implementation-class>easy.idea.MyPluginRegistration</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="toEnglish" class="easy.idea.ToEnglishAction" text="中文2英文" description="中文->英文">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
+    </action>
+    <action id="easyTranslate" class="easy.idea.ToChineseAction" text="翻译" description="英文->中文">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
+    </action>
+  </actions>
+
+</idea-plugin>
