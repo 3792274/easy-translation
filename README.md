@@ -15,3 +15,8 @@ idea翻译插件
        2. Chinese to English : use shortcut key "ALT A".
        3. English to Chinese : selected need to be translated in English code and then use shortcut key "ALT T".
 
+
+![image](https://github.com/limengyu1990/easy-translation/raw/master/images/config.png)
+![image](https://github.com/limengyu1990/easy-translation/raw/master/images/CN2EN.png)
+![image](https://github.com/limengyu1990/easy-translation/raw/master/images/ZN2EN2.png)
+![image](https://github.com/limengyu1990/easy-translation/raw/master/images/EN2CN.png)
