@@ -8,7 +8,8 @@ idea翻译插件
 <p>英文转中文: 鼠标选中需要翻译的英文，然后"鼠标右键->translation"，或者使用快捷键（Alt T）</p>
 
 ### 英文介绍
-    Easy-Translation is a simple English to Chinese plugin. Support a variety of translation sources.such as: Google,Baidu,Tencent and so on.
+    Easy-Translation is a simple English to Chinese plugin. 
+    Support a variety of translation sources.such as: Google,Baidu,Tencent and so on.
 ### Instructions:
        1. Configure source of translation. open "File -> Settings -> Other settings -> Translation Config".
        2. Chinese to English : use shortcut key "ALT A".
